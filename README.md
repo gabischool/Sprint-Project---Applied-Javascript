@@ -4,13 +4,13 @@ This project allows you to practice the concepts and techniques learned over the
 
 ## Instructions
 
-**Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
+**Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Project.**
 
 This is an individual assessment. All work must be your own. Your project score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
-You are not allowed to collaborate during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your PM and Instructor in your cohort help channel on Slack. Your work reflects your proficiency in Applied JavaScript.
+You are not allowed to collaborate during the Sprint Project. However, you are encouraged to follow the twenty-minute rule and seek support from your PM and Instructor in your cohort help channel on Slack. Your work reflects your proficiency in Applied JavaScript.
 
-You have three hours to complete this challenge. Plan your time accordingly.
+You have three hours to complete this Project. Plan your time accordingly.
 
 ## Commits
 
@@ -59,7 +59,7 @@ Your finished project must include all of the following requirements:
 
 ## Stretch Problems
 
-Your stretch project is to write the functionality of a `Carousel` component. This is an advanced challenge, so you are not expected to be able to complete it. If you begin and don't finish, you should still submit with what you have. This is going to be a bit different because you are going to need to create some advanced functionality for the carousel. There is no need to request data for this exercise.
+Your stretch project is to write the functionality of a `Carousel` component. This is an advanced Project, so you are not expected to be able to complete it. If you begin and don't finish, you should still submit with what you have. This is going to be a bit different because you are going to need to create some advanced functionality for the carousel. There is no need to request data for this exercise.
 
 * [ ] Complete the carousel functionality in `Carousel.js`
 
