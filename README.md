@@ -10,7 +10,7 @@ This is an individual assessment. All work must be your own. Your project score 
 
 You are not allowed to collaborate during the Sprint Project. However, you are encouraged to follow the twenty-minute rule and seek support from your PM and Instructor in your cohort help channel on Slack. Your work reflects your proficiency in Applied JavaScript.
 
-You have three hours to complete this Project. Plan your time accordingly.
+You have four hours to complete this Project. Plan your time accordingly.
 
 ## Commits
 
@@ -18,7 +18,7 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 ## Description
 
-You are going to create a Gabi School Newspaper. Your job is going to be to create the components that make up the newspaper's home page. You will do this at first with static data, then you will request data from a server to create dynamic components.
+You are going to create a Gabi School Newspaper. Your job is going to be to create the components that make up the newspaper's home page. You will request data from a server to create dynamic components.
 
 In meeting the minimum viable product (MVP) specifications listed below, you should have a console full of correct responses to the problems given.
 
@@ -26,7 +26,7 @@ In meeting the minimum viable product (MVP) specifications listed below, you sho
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions.
 
-Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
+Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your instructor.
 
 1. What is the DOM?
 
