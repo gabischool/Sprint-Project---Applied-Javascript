@@ -8,12 +8,47 @@
 //
 // <div class="card">
 //   <div class="headline">{Headline of article}</div>
-//   <div class="author">
-//     <div class="img-container">
+
+
+//   <div class="author">.....
+
+//     <div class="img-container">--
 //       <img src={url of authors image} />
-//     </div>
+//     </div>---
+
 //     <span>By {authors name}</span>
-//   </div>
+//   </div>...
+
 // </div>
 //
 // Create a card for each of the articles and add the card to the DOM.
+
+
+function articleCards (articlecard){
+    const card = document.createElement("div");
+// main element
+
+    const headline = document.createElement("div");
+    const author = document.createElement("div");
+    const imgContainer = document.createElement("div");
+    const  url= document.createElement("img");
+    const span = document.createElement("span");
+
+
+    card.appendChild(headline);
+    card.appendChild(author);
+    author.appendChild(imgContainer)
+    author.appendChild(url);
+    author.appendChild(span);
+    return card;
+
+
+
+
+}
+
+
+axios.get("https://gabitimes.herokuapp.com/articles")
+.then( result =>{
+    console.log(result.data.articles);
+})
