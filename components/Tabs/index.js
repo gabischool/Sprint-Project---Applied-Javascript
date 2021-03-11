@@ -22,7 +22,7 @@ function createTopic (toPics){
 
     const tab =document.createElement("div");
     tab.textContent=toPics;
-
+    tab.classList.add("tab");
 return tab;
     
 }

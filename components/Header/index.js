@@ -30,9 +30,13 @@ function createHeader(headers){
     header.appendChild(h1);
     header.appendChild(temps);
 
-    dates.textContent=headerContent[0].date;
-    h1.textContent=headerContent[0].title;
-    temps.textContent=headerContent[0].temp;
+    dates.textContent=headers[0].date;
+    h1.textContent=headers[0].title;
+    temps.textContent=headers[0].temp;
+
+    header.classList.add("header");
+    dates.classList.add("date");
+    temps.classList.add("temp");
 
 return header;
    

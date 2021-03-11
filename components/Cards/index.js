@@ -35,11 +35,26 @@ function articleCards (articlecard){
     const span = document.createElement("span");
 
 
+
+    card.classList.add("card");
+    imgContainer.classList.add("img-container");
+    headline.classList.add("headline");
+    author.classList.add("author");
+
     card.appendChild(headline);
     card.appendChild(author);
     author.appendChild(imgContainer)
-    author.appendChild(url);
+    imgContainer.appendChild(url);
     author.appendChild(span);
+
+    headline.textContent=articlecard.headline;
+    span.textContent=articlecard.authorName;
+    url.src=articlecard.authorPhoto;
+
+
+  
+
+
     return card;
 
 
@@ -47,8 +62,38 @@ function articleCards (articlecard){
 
 }
 
+const cardsContainer = document.querySelector(".cards-container");
 
 axios.get("https://gabitimes.herokuapp.com/articles")
 .then( result =>{
-    console.log(result.data.articles);
+  console.log(result.data.articles);
+
+
+    result.data.articles.javascript.forEach( (element) =>{
+        console.log(element);
+
+        cardsContainer.appendChild(articleCards(element))
+     });
+    result.data.articles.bootstrap.forEach( (element) =>{
+        console.log(element);
+
+        cardsContainer.appendChild(articleCards(element))
+     });
+    result.data.articles.jquery.forEach( (element) =>{
+        console.log(element);
+
+        cardsContainer.appendChild(articleCards(element))
+     });
+    result.data.articles.node.forEach( (element) =>{
+        console.log(element);
+
+        cardsContainer.appendChild(articleCards(element))
+     });
+    result.data.articles.technology.forEach( (element) =>{
+        console.log(element);
+
+        cardsContainer.appendChild(articleCards(element))
+     });
+
+     
 })
