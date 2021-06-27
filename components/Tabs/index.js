@@ -16,3 +16,51 @@
 //     "jquery",
 //     "node.js"
 // ]
+
+
+axios.get("https://gabitimes.herokuapp.com/topics") 
+    .then(response => {
+        //console.log(response.data.topics)
+        tabsmaker("All")
+
+        const newTab = response.data.topics
+
+        newTab.forEach(topic => {
+            tabsmaker(topic)            
+        });
+
+
+    }) .catch(err => console.log(err))
+
+
+const topics = document.querySelector(".topics")
+
+function tabsmaker (data) {
+    let tab = document.createElement('div')
+
+    tab.classList.add('tab')
+    tab.setAttribute("data-topic", data)
+    tab.textContent = data
+    topics.appendChild(tab)
+
+
+    return tab
+}
+
+topics.addEventListener("click", function(event) {
+    let targetTopic = event.target.dataset.topic
+
+    const cards = document.querySelectorAll(".card")
+
+    cards.forEach(card => {
+        card.style.display = "none"
+
+        if (card.dataset.subject !== targetTopic) {
+            card.style.display = "flex"
+        }
+
+        if (targetTopic == "All") {
+            card.style.display = "flex"
+        }
+    })
+})
