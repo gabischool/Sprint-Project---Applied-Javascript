@@ -16,3 +16,27 @@
 //     "jquery",
 //     "node.js"
 // ]
+
+
+function createTopic (toPics){
+
+    const tab =document.createElement("div");
+    tab.textContent=toPics;
+    tab.classList.add("tab");
+return tab;
+    
+}
+
+const trendingTopics =document.querySelector(".topics");
+
+axios.get("https://gabitimes.herokuapp.com/topics")
+.then( result => {
+    
+
+    result.data.topics.forEach(element => {
+        trendingTopics.appendChild(createTopic(element))
+    });
+
+    
+});
+
